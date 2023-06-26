@@ -5,7 +5,7 @@ function showDiff() {
     if (date > weekend) {
         result = 100 + "%";
     } else {
-        result = ((weekend-date)/weekend)*100 + "%";
+        result = date/weekend*100 + "%";
     }
 
     document.getElementById("showp").innerHTML = result;
